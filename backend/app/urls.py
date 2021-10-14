@@ -14,7 +14,6 @@ urlpatterns = [
     path("users/update/<int:user_id>/",UserUpdateView.as_view(),name="update_user"),
     path("users/<int:pk>/", views.UserClassView.as_view(), name="UserInfo"),
     path("jobs/create/<str:username>/", views.JobView.as_view(), name="Jobcreate"),
-
     path("interns/update/<int:pk>/", views.InternDetailView.as_view())
 ] 
 
